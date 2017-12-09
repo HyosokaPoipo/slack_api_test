@@ -65,6 +65,9 @@ module.exports = {
     },
 
     poipo_request_slack_channels_list: function() {
+        /*
+            For getting member of each channel
+        */
         var m_body = {
             token : process.env.SLACK_LEGACY_TOKEN
         };
@@ -82,7 +85,30 @@ module.exports = {
             console.log("res "+res);
             console.log("err "+err);
         });
-    }
+    },
+
+    poipo_request_slack_users_info: function(slack_id) {
+        var m_body = {
+            token : process.env.SLACK_LEGACY_TOKEN,
+            user : slack_id
+        };
+        var m_body_form_data = querystring.stringify(m_body);
+        poipo_request({
+            headers: {
+                'Content-Type' : 'application/x-www-form-urlencoded',
+                //'Authorization' : 'Bearer '+process.env.SLACK_LEGACY_TOKEN
+            },
+            body: m_body_form_data,
+            uri: 'https://slack.com/api/users.info',
+            method: 'POST'
+        }, function(err, res, body) {
+            var data = JSON.parse(body, true);
+            console.log(data.user.name);
+
+            console.log("res "+res);
+            console.log("err "+err);
+        });
+    },
 
 
 }

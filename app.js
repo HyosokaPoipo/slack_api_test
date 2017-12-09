@@ -11,4 +11,5 @@ var poipo_request = require('./poipo_request');
 //poipo_request.poipo_request_slack_api_test();
 //poipo_request.poipo_request_slack_users_list();
 //poipo_request.poipo_request_slack_groups_list();
-poipo_request.poipo_request_slack_channels_list();
+//poipo_request.poipo_request_slack_channels_list();
+poipo_request.poipo_request_slack_users_info("U89MZ4PV2");

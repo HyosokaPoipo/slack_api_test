@@ -1,0 +1,23 @@
+{
+    "ok": true,
+    "user": {
+        "id": "U89MZ4PV2",
+        "team_id": "T895HCY8H",
+        "name": "hyosoka187",
+        "deleted": false,
+        "color": "9f69e7",
+        "real_name": "Hyosoka",
+        "tz": "America\/Los_Angeles",
+        "tz_label": "Pacific Standard Time",
+        "tz_offset": -28800,        
+        "is_admin": true,
+        "is_owner": true,
+        "is_primary_owner": true,
+        "is_restricted": false,
+        "is_ultra_restricted": false,
+        "is_bot": false,
+        "updated": 1512448141,
+        "is_app_user": false,
+        "has_2fa": false
+    }
+}
