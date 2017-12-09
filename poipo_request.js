@@ -24,7 +24,7 @@ module.exports = {
             console.log("err "+err);
         });
     },
-    poipo_request_slack_user_list: function() {
+    poipo_request_slack_users_list: function() {
         var m_body = {
             token : process.env.SLACK_LEGACY_TOKEN
         };

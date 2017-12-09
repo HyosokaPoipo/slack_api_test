@@ -8,7 +8,6 @@ var express = require('express'),
 var app = express();
 var port = process.env.PORT || 3333;
 
-// body parser middleware
 
 
 
@@ -19,6 +18,12 @@ module.exports= {
         app.listen(port, function () {
           console.log('Listening on port ' + port);
         });
+    },
+
+    express_poipo_slack_user_list: function() {
+
     }
 
 }
+
+//SALAH EEEH... AHAHAHA...
